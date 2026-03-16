@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+/* Margin Layer */
+.margin {
+  background-color: #f8c8dc;   /* Soft Pink - Margin */
+  padding: 35px;
+  display: inline-block;
+}
+
+/* Border Layer */
+.border {
+  background-color: #cdb4db;   /* Light Purple - Border Area */
+  padding: 25px;
+  border: 8px solid #6a0dad;   /* Dark Purple Border */
+}
+
+/* Padding Layer */
+.padding {
+  background-color: #90dbf4;   /* Sky Blue - Padding */
+  padding: 25px;
+}
+
+/* Content Layer */
+.content {
+  background-color: #f9f871;   /* Soft Yellow - Content */
+  padding: 15px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<h2>CSS Box Model Structure</h2>
+<p>The CSS box model is essentially a box that wraps around every HTML element.</p>
+<p>It consists of (from innermost part to outermost part): content, padding, border, and margin.</p>
+
+<div class="margin">
+  MARGIN
+  <div class="border">
+    BORDER
+    <div class="padding">
+      PADDING
+      <div class="content">
+        CONTENT
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

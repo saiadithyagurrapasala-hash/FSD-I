@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Methods</title>
+    <script>
+        function getData() {
+
+            // Age using prompt()
+            let age = prompt("Enter your age:");
+
+            // Name using textbox
+            let name = document.getElementById("name").value;
+
+            document.getElementById("output").innerHTML =
+                "Name (Textbox): " + name + "<br>" +
+                "Age (Prompt): " + age;
+        }
+    </script>
+</head>
+<body>
+
+<h3>Taking Input in Different Ways</h3>
+
+Enter Name: <input type="text" id="name"><br><br>
+
+<button onclick="getData()">Submit</button>
+
+<p id="output"></p>
+
+</body>
+</html>
