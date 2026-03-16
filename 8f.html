@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Denomination Program</title>
+</head>
+
+<body>
+
+<h2>Denomination of Amount</h2>
+
+<script>
+
+var amount = parseInt(prompt("Enter the deposited amount:"));
+
+var n100 = Math.floor(amount / 100);
+amount = amount % 100;
+
+var n50 = Math.floor(amount / 50);
+amount = amount % 50;
+
+var n20 = Math.floor(amount / 20);
+amount = amount % 20;
+
+var n10 = Math.floor(amount / 10);
+amount = amount % 10;
+
+var n5 = Math.floor(amount / 5);
+amount = amount % 5;
+
+var n2 = Math.floor(amount / 2);
+amount = amount % 2;
+
+var n1 = amount;
+
+document.write("100's : " + n100 + "<br>");
+document.write("50's : " + n50 + "<br>");
+document.write("20's : " + n20 + "<br>");
+document.write("10's : " + n10 + "<br>");
+document.write("5's : " + n5 + "<br>");
+document.write("2's : " + n2 + "<br>");
+document.write("1's : " + n1 + "<br>");
+
+</script>
+
+</body>
+</html>

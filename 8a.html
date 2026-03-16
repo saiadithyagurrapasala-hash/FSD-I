@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Larger Number Program</title>
+<script>
+function findLargest() {
+
+    var num1 = parseInt(prompt("Enter first integer:"));
+    var num2 = parseInt(prompt("Enter second integer:"));
+    var num3 = parseInt(prompt("Enter third integer:"));
+
+    var message = "";
+
+    if(num1 == num2 && num2 == num3) {
+        message = "<h2>EQUAL NUMBERS</h2>";
+    }
+    else {
+        var largest = Math.max(num1, num2, num3);
+        message = "<h2>" + largest + " LARGER NUMBER</h2>";
+    }
+
+    alert(message);
+}
+</script>
+</head>
+
+<body onload="findLargest()">
+</body>
+</html>
